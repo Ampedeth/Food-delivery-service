@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Food delivery service</title>
 </head>
 <body>
-    <!--Header-->
+    <div class="page-wrapper">
+        <!--Header-->
     <header class="header">
         <div class="container">
             <div class="header-box">
                 <div class="header-logo logo"> 
                     <img src="./img/logo.png" alt="logo">
                 </div>
-                <div class="header-controls">controls</div>
+                <div class="header-controls">
+                    <button class="btn btn-primary">
+                        <img src="/img/login-icon.png" alt="login icon">
+                        Login
+                    </button>
+                    <button class="btn btn-outline">
+                        <img src="/img/shopping-cart.png" alt=" shopping cart">
+                        Shopping cart
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
     <!--Main content-->
     <main class="main">
-        <div class="container">
-            container
-        </div>
+        <section class="banner">
+            <div class="container">
+                <div class="banner-item">
+                    <h2 class="banner-item--title">Online home delivery service</h2>
+                    <p class="banner-item--subtitle"> Dishes from your favorite restaurant will 
+                        be delivered by a courier wearing gloves, a mask and antiseptic</p>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products-header">
+                    <h3 class="products-header--title">Restaurants</h3>
+                    <input 
+                        type="text" 
+                        class="products-header--search" 
+                        placeholder="Search for dishes and restaurants">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--Footer-->
@@ -33,11 +63,23 @@
                 <div class="footer-logo logo">
                     <img src="./img/logo.png" alt="logo">
                 </div>
-                <div class="footer-nav">2</div>
-                <div class="footer-social">3</div>    
+                <div class="footer-nav">
+                    <ul>
+                        <li>Restaurants</li>
+                        <li>Couriers</li>
+                        <li>Press center</li>
+                        <li>Contacts</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <img src="/img/social/inst.png" alt="instagram">
+                    <img src="/img/social/fb.png" alt="facebook">
+                    <img src="/img/social/vk.png" alt="vk">
+                </div>    
             </div>
         </div>
     </footer>
+    </div>
     <script src="/js/script.js"></script>
 </body>
 </html>
